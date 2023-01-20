@@ -7,7 +7,7 @@ import {
       
       } from "react-router-dom";
 
-
+      import "./stylesforall.css"
 export default function App()
 {
     Axios.defaults.withCredentials = true;
@@ -43,12 +43,12 @@ export default function App()
        
     }
     return(
-<>
 
-<center>
 
-        <legend >Login Details</legend>
-        <table >
+<div className='container'>
+
+       
+        {/* <table className="login" >
             <tr>
                 <td >
                 <label >Email</label></td>
@@ -63,12 +63,21 @@ export default function App()
                     <input type="text" name="password" onChange={handleChange}/>
                 </td>
             </tr>
-        </table>
-  
+        </table> */}
+   
+        <div className='cont-det'>
+        
+       <div className='cont-in'>
+       <legend >Login Details</legend>
+       <br></br>
+       <div className='vals'><p> Email </p><input type="email" name="userEmail" onChange={handleChange}/></div>
+       <div className='vals'> <p>Password</p><input type="text" name="password" onChange={handleChange}/></div>
+       <br></br>
+       <button onClick={sendData}>Submit</button>   </div>
 
-     <button onClick={sendData}>Submit</button>   </center>
-
-</>
+       </div>
+      </div>
+     
 
     );
 }

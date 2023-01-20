@@ -9,6 +9,7 @@ import {
 
 } from "react-router-dom";
 
+import "./stylesforall.css"
 
 export default function App() {
 
@@ -47,7 +48,7 @@ export default function App() {
     //                 <div className='cont-in'>
     //                     <div class="card-content">
     //                         <div>Name: {ele.bookName}</div>
-                            
+
     //                         <div>Author: {ele.bookAuthor}</div>
 
 
@@ -66,32 +67,56 @@ export default function App() {
     //             }</div>
     //     </div>
     // );
-  
+
 
     return (
-        <div>
-            <div>Search Here :<Srchbox setinputValue={setinputValue} /></div>
 
-            <div className='container'>
-            <table>
-                <th>Name</th>
-                <th>Details</th>
-                {filterData.length ? filterData.map((ele) => (
 
-                
-                            <tr><td> {ele.bookName}</td>
-                            <button onClick={()=>navigate("/details",{state:ele})}>Details</button>
-                            </tr>
-                        
 
-                )) : data.length && data.map((ele) => (
+        <div className='container'>
+            <div className="sec-l1">Search Book by Name or Author :<Srchbox setinputValue={setinputValue} /></div>
+            <br></br>
 
-                    
-                    <tr><td> {ele.bookName}</td></tr>
-                   
+            <div className='cont-det'>
 
-                ))
-                } </table></div>
+                <div className='cont-in1'>
+                    <legend>Book Title</legend>
+                    {/* <th>Details</th> */}
+                    {filterData.length ? filterData.map((ele) => (
+
+
+                        <tr>
+                            {/* <td><button onClick={()=>navigate("/details",{state:ele})}>Details</button></td> */}
+                            <Link to="/details" state={ele}>
+
+                                <td> {ele.bookName}</td>
+
+                            </Link>
+                        </tr>
+
+
+                    )) : data.length ? data.map((ele) => (
+
+
+                        <tr>
+                            <Link to="/details" state={ele}>
+
+                                <td> {ele.bookName}</td>
+
+                            </Link></tr>
+
+
+                    )) : <div><p>No Books Currently Available</p>
+                        <p>To add book 
+                        <Link to="/addbook" >
+
+                            Click here
+
+                        </Link></p>
+                    </div>
+                    } </div>
+            </div>
         </div>
+
     );
 }

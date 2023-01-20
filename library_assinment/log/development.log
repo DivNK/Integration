@@ -5427,3 +5427,1161 @@ Processing by BookController#index as HTML
 Completed 200 OK in 32ms (Views: 20.6ms | ActiveRecord: 1.8ms | Allocations: 1913)
 
 
+Started POST "/login" for 127.0.0.1 at 2023-01-20 17:33:24 +0530
+Processing by LoginController#create as HTML
+  Parameters: {"userEmail"=>"test1@gmail.com", "password"=>"[FILTERED]", "login"=>{"userEmail"=>"test1@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."userEmail" = $1 LIMIT $2[0m  [["userEmail", "test1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:5:in `create'
+Completed 200 OK in 461ms (Views: 4.7ms | ActiveRecord: 45.0ms | Allocations: 3629)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 17:33:25 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 30ms (Views: 18.4ms | ActiveRecord: 1.5ms | Allocations: 1913)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 17:35:03 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 155ms (Views: 10.2ms | ActiveRecord: 1.4ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 17:35:08 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 3.1ms | ActiveRecord: 1.1ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 17:37:02 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (6.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 161ms (Views: 34.0ms | ActiveRecord: 22.2ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 21:55:11 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (6.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 1609ms (Views: 146.6ms | ActiveRecord: 206.6ms | Allocations: 4838)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 21:55:16 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 0.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 21:55:19 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (4.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 13ms (Views: 3.8ms | ActiveRecord: 4.5ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 21:55:24 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 21:55:37 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 1.1ms | Allocations: 1891)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-20 22:00:13 +0530
+Processing by LoginController#create as HTML
+  Parameters: {"userEmail"=>"test1@gmail.com", "password"=>"[FILTERED]", "login"=>{"userEmail"=>"test1@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."userEmail" = $1 LIMIT $2[0m  [["userEmail", "test1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:5:in `create'
+Completed 200 OK in 447ms (Views: 6.1ms | ActiveRecord: 4.8ms | Allocations: 738)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:00:14 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 37ms (Views: 28.8ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-01-20 22:01:45 +0530
+Processing by LoginController#create as HTML
+  Parameters: {"userEmail"=>"test1@gmail.com", "password"=>"[FILTERED]", "login"=>{"userEmail"=>"test1@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."userEmail" = $1 LIMIT $2[0m  [["userEmail", "test1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/login_controller.rb:5:in `create'
+Completed 200 OK in 231ms (Views: 3.0ms | ActiveRecord: 1.4ms | Allocations: 731)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:01:46 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 21ms (Views: 11.3ms | ActiveRecord: 1.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:02:48 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (44.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 302ms (Views: 37.2ms | ActiveRecord: 45.4ms | Allocations: 1894)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:04:09 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (81.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (64.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 726ms (Views: 121.9ms | ActiveRecord: 145.6ms | Allocations: 1892)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:05:09 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (2.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 137ms (Views: 45.2ms | ActiveRecord: 5.4ms | Allocations: 1892)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:05:14 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 105ms (Views: 97.7ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:05:48 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 22ms (Views: 3.4ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:06:07 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 1.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:06:27 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 4.3ms | ActiveRecord: 1.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:08:33 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (6.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 78ms (Views: 21.1ms | ActiveRecord: 15.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:08:55 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 1.1ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:08:57 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 1.2ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:09:00 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:09:02 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:09:49 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 11ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:10:44 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 37ms (Views: 5.7ms | ActiveRecord: 0.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:13:03 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (4.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 127ms (Views: 30.2ms | ActiveRecord: 10.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:24:39 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (5.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 268ms (Views: 14.4ms | ActiveRecord: 52.1ms | Allocations: 4860)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:26:12 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:26:15 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 0.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:30:09 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (14.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (6.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 112ms (Views: 22.2ms | ActiveRecord: 21.1ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:30:15 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 3.7ms | ActiveRecord: 1.3ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:30:58 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 70ms (Views: 21.2ms | ActiveRecord: 10.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:31:23 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 33ms (Views: 24.0ms | ActiveRecord: 1.2ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:40:01 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 193ms (Views: 13.1ms | ActiveRecord: 33.5ms | Allocations: 4834)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:40:08 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:40:47 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 29ms (Views: 22.6ms | ActiveRecord: 0.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:42:37 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 39ms (Views: 9.8ms | ActiveRecord: 2.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:55:06 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 376ms (Views: 14.2ms | ActiveRecord: 38.5ms | Allocations: 4809)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:55:25 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:55:41 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 0.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:56:58 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (3.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 70ms (Views: 14.5ms | ActiveRecord: 14.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:58:32 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 116ms (Views: 13.1ms | ActiveRecord: 0.9ms | Allocations: 1894)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:59:35 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 42ms (Views: 9.1ms | ActiveRecord: 8.1ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 22:59:44 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 74ms (Views: 66.8ms | ActiveRecord: 0.9ms | Allocations: 1892)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:00:23 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 31ms (Views: 6.0ms | ActiveRecord: 0.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:00:29 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:00:41 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 1892)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:00:48 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:01:42 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (12.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (5.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 130ms (Views: 27.6ms | ActiveRecord: 17.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:04:20 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 113ms (Views: 40.9ms | ActiveRecord: 3.8ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:04:36 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 22ms (Views: 11.6ms | ActiveRecord: 2.4ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:04:45 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 1.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:04:58 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:05:07 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:07:25 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (9.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 109ms (Views: 27.0ms | ActiveRecord: 15.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:08:50 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 92ms (Views: 34.8ms | ActiveRecord: 1.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:08:52 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 31ms (Views: 21.1ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:09:03 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:09:13 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:09:17 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:10:23 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:10 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 61ms (Views: 17.6ms | ActiveRecord: 1.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:13 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 1.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:19 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 1.1ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:33 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 16ms (Views: 9.5ms | ActiveRecord: 0.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:40 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:43 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 22ms (Views: 13.8ms | ActiveRecord: 1.2ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:11:46 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 17ms (Views: 6.9ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:12:05 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 20ms (Views: 7.8ms | ActiveRecord: 2.2ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:12:06 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 23ms (Views: 8.6ms | ActiveRecord: 0.7ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:12:10 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 20ms (Views: 10.6ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:13:54 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 37ms (Views: 16.4ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:14:29 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 26ms (Views: 7.4ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:15:57 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (9.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 112ms (Views: 25.4ms | ActiveRecord: 21.6ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:16:28 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:17:15 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 42ms (Views: 18.9ms | ActiveRecord: 1.0ms | Allocations: 1891)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:35:22 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 654ms (Views: 12.2ms | ActiveRecord: 56.5ms | Allocations: 4863)
+
+
+Started GET "/Addbook?bookName=Test&bookAuthor=Test&bookQuantity=1" for 127.0.0.1 at 2023-01-20 23:38:29 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Addbook"):
+  
+Started GET "/Addbook" for 127.0.0.1 at 2023-01-20 23:39:44 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Addbook"):
+  
+Started GET "/AddBook?bookName=Test&bookAuthor=Test&bookQuantity=1" for 127.0.0.1 at 2023-01-20 23:40:12 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"Test", "bookAuthor"=>"Test", "bookQuantity"=>"1"}
+  [1m[36mUser Load (14.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (26.1ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "Test"], ["bookAuthor", "Test"], ["bookQuantity", 1], ["created_at", "2023-01-20 18:10:12.758296"], ["updated_at", "2023-01-20 18:10:12.758296"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 171ms (Views: 3.6ms | ActiveRecord: 45.4ms | Allocations: 3594)
+
+
+Started GET "/AddBook" for 127.0.0.1 at 2023-01-20 23:40:31 +0530
+Processing by BookController#create as */*
+  Parameters: {"bookName"=>"Alice Next Levet", "bookAuthor"=>"Lewis Carroll", "bookQuantity"=>7, "book"=>{"bookName"=>"Alice Next Levet", "bookAuthor"=>"Lewis Carroll", "bookQuantity"=>7}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (1.1ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "Alice Next Levet"], ["bookAuthor", "Lewis Carroll"], ["bookQuantity", 7], ["created_at", "2023-01-20 18:10:32.036935"], ["updated_at", "2023-01-20 18:10:32.036935"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 2501)
+
+
+Started GET "/AddBook?bookName=A+TIME+TO+KILL&bookAuthor=JOHN+GRISHAM&bookQuantity=1" for 127.0.0.1 at 2023-01-20 23:41:45 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"A TIME TO KILL", "bookAuthor"=>"JOHN GRISHAM", "bookQuantity"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "A TIME TO KILL"], ["bookAuthor", "JOHN GRISHAM"], ["bookQuantity", 1], ["created_at", "2023-01-20 18:11:46.013484"], ["updated_at", "2023-01-20 18:11:46.013484"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 2496)
+
+
+Started GET "/AddBook?bookName=A+TIME+TO+KILL&bookAuthor=JOHN+GRISHAM&bookQuantity=1" for 127.0.0.1 at 2023-01-20 23:42:26 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"A TIME TO KILL", "bookAuthor"=>"JOHN GRISHAM", "bookQuantity"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "A TIME TO KILL"], ["bookAuthor", "JOHN GRISHAM"], ["bookQuantity", 1], ["created_at", "2023-01-20 18:12:26.380559"], ["updated_at", "2023-01-20 18:12:26.380559"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 2495)
+
+
+Started GET "/AddBook?bookName=A+TIME+TO+KILL&bookAuthor=JOHN+GRISHAM&bookQuantity=1" for 127.0.0.1 at 2023-01-20 23:42:49 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"A TIME TO KILL", "bookAuthor"=>"JOHN GRISHAM", "bookQuantity"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (1.9ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "A TIME TO KILL"], ["bookAuthor", "JOHN GRISHAM"], ["bookQuantity", 1], ["created_at", "2023-01-20 18:12:49.141571"], ["updated_at", "2023-01-20 18:12:49.141571"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 3.5ms | Allocations: 2495)
+
+
+Started GET "/AddBook?bookName=A+TIME+TO+KILL&bookAuthor=JOHN+GRISHAM&bookQuantity=1" for 127.0.0.1 at 2023-01-20 23:44:48 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"A TIME TO KILL", "bookAuthor"=>"JOHN GRISHAM", "bookQuantity"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (3.1ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "A TIME TO KILL"], ["bookAuthor", "JOHN GRISHAM"], ["bookQuantity", 1], ["created_at", "2023-01-20 18:14:48.857020"], ["updated_at", "2023-01-20 18:14:48.857020"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 81ms (Views: 2.0ms | ActiveRecord: 4.7ms | Allocations: 2494)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:44:49 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (2.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 67ms (Views: 34.7ms | ActiveRecord: 2.9ms | Allocations: 2594)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:46:08 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 43ms (Views: 16.9ms | ActiveRecord: 1.0ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:46:59 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 15ms (Views: 3.8ms | ActiveRecord: 1.7ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:47:03 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 9ms (Views: 1.6ms | ActiveRecord: 0.8ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:47:20 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 1.1ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:47:26 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 50ms (Views: 27.0ms | ActiveRecord: 1.1ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:48:30 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (13.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (9.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 132ms (Views: 12.4ms | ActiveRecord: 23.4ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:48:41 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.7ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:48:43 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 14ms (Views: 4.7ms | ActiveRecord: 0.7ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:48:44 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 24ms (Views: 1.5ms | ActiveRecord: 0.6ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:00 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 65ms (Views: 59.6ms | ActiveRecord: 0.6ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:02 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.9ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:04 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.7ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:13 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:16 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:17 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 14ms (Views: 2.4ms | ActiveRecord: 0.9ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:23 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:49:59 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 49ms (Views: 16.5ms | ActiveRecord: 1.3ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:13 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 2.1ms | ActiveRecord: 1.0ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:19 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.9ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:24 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 14ms (Views: 2.6ms | ActiveRecord: 0.8ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:24 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 13ms (Views: 6.7ms | ActiveRecord: 0.5ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:37 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 42ms (Views: 11.2ms | ActiveRecord: 1.2ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:53 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 11ms (Views: 4.7ms | ActiveRecord: 0.7ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:50:55 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:51:29 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 39ms (Views: 8.9ms | ActiveRecord: 1.5ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:51:45 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 12ms (Views: 3.5ms | ActiveRecord: 1.0ms | Allocations: 1297)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:52:02 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.7ms | Allocations: 1297)
+
+
+Started GET "/AddBook?bookName=Don+Quixote&bookAuthor=Miguel+de+Cervantes&bookQuantity=4" for 127.0.0.1 at 2023-01-20 23:52:39 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"Don Quixote", "bookAuthor"=>"Miguel de Cervantes", "bookQuantity"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (14.0ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "Don Quixote"], ["bookAuthor", "Miguel de Cervantes"], ["bookQuantity", 4], ["created_at", "2023-01-20 18:22:39.363311"], ["updated_at", "2023-01-20 18:22:39.363311"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 89ms (Views: 0.1ms | ActiveRecord: 16.2ms | Allocations: 2494)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:52:39 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 0.5ms | Allocations: 1421)
+
+
+Started GET "/AddBook?bookName=Lord+of+the+Rings&bookAuthor=J.R.R.+Tolkien&bookQuantity=5" for 127.0.0.1 at 2023-01-20 23:52:59 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"Lord of the Rings", "bookAuthor"=>"J.R.R. Tolkien", "bookQuantity"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "Lord of the Rings"], ["bookAuthor", "J.R.R. Tolkien"], ["bookQuantity", 5], ["created_at", "2023-01-20 18:23:00.014815"], ["updated_at", "2023-01-20 18:23:00.014815"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2494)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:53:00 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1538)
+
+
+Started GET "/AddBook?bookName=Harry+Potter+and+the+Sorcerer%27s+Stone&bookAuthor=J.K.+Rowling&bookQuantity=6" for 127.0.0.1 at 2023-01-20 23:53:20 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"Harry Potter and the Sorcerer's Stone", "bookAuthor"=>"J.K. Rowling", "bookQuantity"=>"6"}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (3.7ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "Harry Potter and the Sorcerer's Stone"], ["bookAuthor", "J.K. Rowling"], ["bookQuantity", 6], ["created_at", "2023-01-20 18:23:21.143174"], ["updated_at", "2023-01-20 18:23:21.143174"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 55ms (Views: 0.4ms | ActiveRecord: 9.3ms | Allocations: 2496)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:53:21 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 18ms (Views: 4.4ms | ActiveRecord: 1.0ms | Allocations: 1656)
+
+
+Started GET "/AddBook?bookName=Alice%27s+Adventures+in+Wonderland&bookAuthor=Lewis+Carroll&bookQuantity=7" for 127.0.0.1 at 2023-01-20 23:53:43 +0530
+Processing by BookController#create as HTML
+  Parameters: {"bookName"=>"Alice's Adventures in Wonderland", "bookAuthor"=>"Lewis Carroll", "bookQuantity"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:33:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mBook Create (1.1ms)[0m  [1m[32mINSERT INTO "books" ("bookName", "bookAuthor", "bookQuantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["bookName", "Alice's Adventures in Wonderland"], ["bookAuthor", "Lewis Carroll"], ["bookQuantity", 7], ["created_at", "2023-01-20 18:23:43.158514"], ["updated_at", "2023-01-20 18:23:43.158514"]]
+  ↳ app/controllers/book_controller.rb:39:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/book_controller.rb:39:in `create'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 2447)
+
+
+Started GET "/book" for 127.0.0.1 at 2023-01-20 23:53:43 +0530
+Processing by BookController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/book_controller.rb:8:in `index'
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/book_controller.rb:15:in `index'
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 0.8ms | Allocations: 1774)
+
+
+Started GET "/Logout" for 127.0.0.1 at 2023-01-20 23:59:40 +0530
+Processing by LogoutController#index as HTML
+Completed 200 OK in 24ms (Views: 4.1ms | Allocations: 232)
+
+

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./stylesforall.css"
 export default function App({setinputValue}){
 
 
@@ -7,7 +8,7 @@ export default function App({setinputValue}){
     }
     return(
         <>
-        <input placeholder='search here' onChange={handleChange}/>
+        <input placeholder='Enter Here' onChange={handleChange}/>
         </>
     )
 }
