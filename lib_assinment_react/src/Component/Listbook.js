@@ -22,11 +22,19 @@ export default function App() {
 
     useEffect(() => {
         const fetchData = async () => {
-            let res = await Axios.get("http://127.0.0.1:3001/book", { withCredentials: true }); // if you use proxy then only /book isusing cros gem then complete path
+           try{let res = await Axios.get("http://127.0.0.1:3001/book", { withCredentials: true }); // if you use proxy then only /book isusing cros gem then complete path
             console.log(res.data);
             setData(res.data)
 
             // arryay of objects
+        }catch(e)
+        {
+            
+            console.log(e);
+        }
+    } 
+        {
+
         }
         fetchData()
     }, [])

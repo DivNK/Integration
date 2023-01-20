@@ -30,12 +30,17 @@ export default function App() {
         console.log("Enter Send data");
         console.log("**********");
         console.log(book);
+        try{
         let res = await Axios.get("http://127.0.0.1:3001/AddBook", { params: book }, { withCredentials: true })
 
         console.log(res.headers);
         if (res.data.includes("entered")) {
             console.log("enter");
             navigate('/list')
+        }}
+        catch(e)
+        {
+            console.log(e);
         }
 
     }

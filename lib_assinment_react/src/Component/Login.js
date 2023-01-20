@@ -13,6 +13,7 @@ export default function App()
     Axios.defaults.withCredentials = true;
 
     let[login,setLogin]=useState({});
+    const [sessionId, setSessionId] = useState(null);
     const navigate = useNavigate();
     
     const handleChange=(e)=>
@@ -33,15 +34,37 @@ export default function App()
         console.log("**********");
         console.log(login);
         // let res = await Axios.get("http://127.0.0.1:3001/Login", { params: login },{withCredentials: true})
-        let res = await Axios.post("http://127.0.0.1:3001/login", login,{withCredentials: true})
+       try{
+
+       let res = await Axios.post("http://127.0.0.1:3001/login", login,{withCredentials: true})
 
         console.log(res.headers);
+        setSessionId(res.data.session_id);
+      console.log("Session ID: ", sessionId);
         if(res.data.includes("Successfull"))
         {
             navigate('/list')
         }
+    }catch(e) 
+    {
+        console.log(e);
+  
+    }
        
     }
+
+    // const makeApiRequest = async () => {
+    //     try {
+    //       const response = await Axios.get("http://127.0.0.1:3001/book", {
+    //         headers: {
+    //           "X-Session-Id": sessionId
+    //         }
+    //       });
+    //       console.log(response);
+    //     } catch (error) {
+    //       console.log(error);
+    //     }
+    //   };
     return(
 
 
@@ -74,7 +97,7 @@ export default function App()
        <div className='vals'> <p>Password</p><input type="text" name="password" onChange={handleChange}/></div>
        <br></br>
        <button onClick={sendData}>Submit</button>   </div>
-
+       {/* {sessionId && <button onClick={makeApiRequest}>Make API Request</button>} */}
        </div>
       </div>
      
