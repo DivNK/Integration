@@ -4,7 +4,10 @@ class BookController < ApplicationController
     def landing
     end
     def index
-        curr_usr=User.find_by_id(session[:current_user_id])
+        # curr_usr=User.find_by_id(session[:current_user_id])
+        curr_usr=User.find(1)
+        puts "******************Book Index*****************************"
+        puts session[:current_user_id]
         bk_lst=Book.all
         if(curr_usr.nil?)
             render json: "Not logged in"
@@ -26,10 +29,12 @@ class BookController < ApplicationController
     def create
         puts ("test")
         puts params[:bookAuthor]
-        curr_usr=User.find_by_id(session[:current_user_id])
+        # curr_usr=User.find_by_id(session[:current_user_id])
+        curr_usr=User.find(1)
        
-        if(curr_usr.nil?)
-            render json: "Not logged in"
+        # if(curr_usr.nil? || curr_usr.userEmail !="admin.lib@gmail.com")
+            if(curr_usr.nil?)
+            render json: "Only Admin can edit Book details"
         else
         Book.create('bookName': params[:bookName],
             'bookAuthor': params[:bookAuthor], 
@@ -40,7 +45,9 @@ class BookController < ApplicationController
     
     def update
         p=Book.find(params[:id].to_i)
-        curr_usr=User.find_by_id(session[:current_user_id])
+        # curr_usr=User.find_by_id(session[:current_user_id])
+        curr_usr=User.find(1)
+        
         puts params[:bookName]
         if(curr_usr.nil?)
             render json: "Not logged in"
@@ -53,7 +60,8 @@ class BookController < ApplicationController
     end
     def modify
         p=Book.find_by('bookName': params[:bookName])
-        curr_usr=User.find_by_id(session[:current_user_id])
+        # curr_usr=User.find_by_id(session[:current_user_id])
+        curr_usr=User.find(1)
         puts params[:bookName]
         if(curr_usr.nil?)
             render json: "Not logged in"
@@ -67,7 +75,8 @@ class BookController < ApplicationController
 
     def destroy 
         p = Book.find(params[:id])
-        curr_usr=User.find_by_id(session[:current_user_id])
+        # curr_usr=User.find_by_id(session[:current_user_id])
+        curr_usr=User.find(1)
         if(curr_usr.nil?)
             render json: "Not logged in"
         else
@@ -78,7 +87,8 @@ class BookController < ApplicationController
 
     def delete 
         p = Book.find_by('bookName': params[:bookName])
-        curr_usr=User.find_by_id(session[:current_user_id])
+        # curr_usr=User.find_by_id(session[:current_user_id])
+        curr_usr=User.find(1)
         if(curr_usr.nil?)
             render json: "Not logged in"
         else

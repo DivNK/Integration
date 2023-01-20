@@ -1,0 +1,112 @@
+.container
+{
+    height: 90%;
+    width: 95%;
+    display: flex;
+    margin: 35px;
+    justify-content: center;
+align-items: center;
+ flex-direction: column;
+    background-color: lightyellow;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    /* background-image: url('images/logo.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom right ; */
+}
+.cont-det
+{
+    height: 90%;
+    width: 95%;
+    display: flex;
+    margin: 35px;
+    justify-content: center;
+align-items: center;
+
+    background-color: lightyellow;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    /* background-image: url('images/logo.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom right ; */
+}
+
+
+.container>p
+{
+    height: 30%;
+    width: 50%;
+    text-align: justify;
+
+}
+.header
+{
+    display: flex;
+    flex-direction: column ;
+}
+
+.top-header
+{    height: 10%;
+    width: 95%;
+    display: flex;
+    flex-direction: row ;
+    background-color: bisque;
+    margin: 35px;
+}
+.individual
+{
+/* border: 1px solid; */
+    display: flex;
+    flex-direction: row ;
+    padding: 5px;
+}
+table,tr
+{
+    border: 1px solid black
+}
+
+.cont-in
+{
+    height:50%;
+    width: 55%;
+    background-color:white;
+    margin: 8PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+/*
+.card-content
+{
+    height:35%;
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+    /* display: flex;
+    flex-direction: column; */
+    /* text-align: left; 
+} */
+
+.vals
+
+{    
+    height:15%;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.vals>p{
+    height:10%;
+    width: 50%;
+}

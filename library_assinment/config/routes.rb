@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root "book#landing"
   resources :book
   resources :user
+  resources :login
   get "BookList" , to:"book#index"
   get "Register" , to:"user#create"
   get "Login" , to:"login#create"
