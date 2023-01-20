@@ -47,7 +47,7 @@ export default function App() {
             <div className='cont-det'>
 
                 <div className='cont-in'>
-                    <legend >Login Details</legend>
+                    <legend >Book Details</legend>
                     <br></br>
                     <div className='vals'><p> Book Name </p><input type="email" name="bookName" onChange={handleChange} /></div>
                     <div className='vals'> <p>Author</p><input type="text" name="bookAuthor" onChange={handleChange} /></div>
